@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Polibio</title>
+</head>
+<body>
+    <h1>Cifrado de Polibio</h1>
+
+    <!--_________________Parte de cifrado___________________________  -->
+    <form action="/backend/save.php" method="post" autocomplete="off">
+        <label for="mensaje">Palabra:</label>
+        <input type="text" name="mensaje" id="mensaje">
+        <button type="submit" name="cifrar">Cifrar</button>
+
+    
+    <!--_________________Parte de nueva palabra___________________________  -->
+        <form action="" method="post">
+            <button type="submit" name="nueva_palabra">Nueva Palabra</button>
+        </form>
+        <br><br>
+    </form>
+
+    <!--_________________Parte de descifrado___________________________  -->
+    <form action="/backend/save.php" method="post" autocomplete="off">
+        <label for="mensaje_cifrado">Palabra cifrada:</label>
+        <input type="text" name="mensaje_cifrado" id="mensaje_cifrado">
+        <button type="submit" name="descifrar">Descifrar</button>
+    </form>
+
+    <div id="resultado">
+        <?php
+        
+        ?>
+    </div>
+
+    
+    <script src="/js/index.js"></script>
+   
+</body>
+</html>
